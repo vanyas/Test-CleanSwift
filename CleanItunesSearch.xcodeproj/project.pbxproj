@@ -12,7 +12,18 @@
 		160335C21EC37B7700305F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160335C01EC37B7700305F81 /* Main.storyboard */; };
 		160335C41EC37B7700305F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160335C31EC37B7700305F81 /* Assets.xcassets */; };
 		160335C71EC37B7700305F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160335C51EC37B7700305F81 /* LaunchScreen.storyboard */; };
+		1603363E1EC3838A00305F81 /* CleanItunesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1603363C1EC3838100305F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1603362D1EC3835700305F81;
+			remoteInfo = CleanItunesCore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		160335B91EC37B7700305F81 /* CleanItunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanItunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +33,7 @@
 		160335C31EC37B7700305F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		160335C61EC37B7700305F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		160335C81EC37B7700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CleanItunesCore.xcodeproj; path = CleanItunesCore/CleanItunesCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1603363E1EC3838A00305F81 /* CleanItunesCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				160335BB1EC37B7700305F81 /* CleanItunesSearch */,
 				160335BA1EC37B7700305F81 /* Products */,
+				160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +76,14 @@
 				160335C81EC37B7700305F81 /* Info.plist */,
 			);
 			path = CleanItunesSearch;
+			sourceTree = "<group>";
+		};
+		160336391EC3838100305F81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1603363D1EC3838100305F81 /* CleanItunesCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,12 +134,28 @@
 			mainGroup = 160335B01EC37B7700305F81;
 			productRefGroup = 160335BA1EC37B7700305F81 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 160336391EC3838100305F81 /* Products */;
+					ProjectRef = 160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				160335B81EC37B7700305F81 /* CleanItunesSearch */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1603363D1EC3838100305F81 /* CleanItunesCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CleanItunesCore.framework;
+			remoteRef = 1603363C1EC3838100305F81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		160335B71EC37B7700305F81 /* Resources */ = {
@@ -300,6 +338,7 @@
 				160335CD1EC37B7700305F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
