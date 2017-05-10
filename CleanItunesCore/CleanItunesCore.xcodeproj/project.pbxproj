@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		160336321EC3835700305F81 /* CleanItunesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 160336301EC3835700305F81 /* CleanItunesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		160336451EC383FB00305F81 /* ItunesSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160336441EC383FB00305F81 /* ItunesSearchRequest.swift */; };
+		160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		160336301EC3835700305F81 /* CleanItunesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanItunesCore.h; sourceTree = "<group>"; };
 		160336311EC3835700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160336441EC383FB00305F81 /* ItunesSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequest.swift; sourceTree = "<group>"; };
+		160336481EC386DB00305F81 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 			children = (
 				1603362F1EC3835700305F81 /* CleanItunesCore */,
 				1603362E1EC3835700305F81 /* Products */,
+				160336471EC386DB00305F81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +83,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		160336471EC386DB00305F81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				160336481EC386DB00305F81 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -101,6 +113,7 @@
 				160336291EC3835700305F81 /* Frameworks */,
 				1603362A1EC3835700305F81 /* Headers */,
 				1603362B1EC3835700305F81 /* Resources */,
+				1603364E1EC387D300305F81 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +167,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1603364E1EC387D300305F81 /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		160336281EC3835700305F81 /* Sources */ = {
@@ -276,6 +307,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CleanItunesCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -297,6 +332,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CleanItunesCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
