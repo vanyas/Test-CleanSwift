@@ -1,0 +1,6 @@
+#!/bin/sh
+carthage build --platform iOS --project-directory "CleanItunesCore/"
+
+
+
+

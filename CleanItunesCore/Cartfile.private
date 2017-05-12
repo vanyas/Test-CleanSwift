@@ -1,2 +1,7 @@
+# List of Private dependencies:
+
+# Alamofire
 github "Alamofire/Alamofire" ~> 4.4
 
+# Realm
+github "realm/realm-cocoa"
