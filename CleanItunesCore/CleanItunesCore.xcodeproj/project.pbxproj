@@ -18,6 +18,7 @@
 		160336311EC3835700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160336441EC383FB00305F81 /* ItunesSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequest.swift; sourceTree = "<group>"; };
 		160336481EC386DB00305F81 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		16042CCD1EC6171B00B17626 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		1603362F1EC3835700305F81 /* CleanItunesCore */ = {
 			isa = PBXGroup;
 			children = (
+				16042CCC1EC6170400B17626 /* Carthage Files */,
 				160336421EC383EB00305F81 /* Classes */,
 				160336401EC383C400305F81 /* Supporting Files */,
 			);
@@ -91,6 +93,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		16042CCC1EC6170400B17626 /* Carthage Files */ = {
+			isa = PBXGroup;
+			children = (
+				16042CCD1EC6171B00B17626 /* Cartfile.private */,
+			);
+			name = "Carthage Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -114,6 +124,7 @@
 				1603362A1EC3835700305F81 /* Headers */,
 				1603362B1EC3835700305F81 /* Resources */,
 				1603364E1EC387D300305F81 /* Copy Frameworks */,
+				16042CCE1EC6229100B17626 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -183,6 +194,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		16042CCE1EC6229100B17626 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
