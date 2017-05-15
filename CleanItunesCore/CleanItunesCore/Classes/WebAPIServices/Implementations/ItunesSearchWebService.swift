@@ -8,10 +8,19 @@
 
 import Foundation
 
-class ItunesSearchWebService: ItunesSearchableAPI {
+public class ItunesSearchWebService: ItunesSearchableAPI {
+  // MARK: - Properties
+  private let webAPIClient: WebAPIClient
+  private let requestAdapter: ItunesSearchRequestAdapter
+
+  // MARK: - Initializer
+  init(using webAPIClient: WebAPIClient,
+       requestAdapter: ItunesSearchRequestAdapter) {
+    self.webAPIClient = webAPIClient
+    self.requestAdapter = requestAdapter
+  }
 
   // MARK: - ItunesSearchableAPI Implementation
-
   public func searchContent(by term: String, searchMedia: SearchMedia, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {
     // TODO: Implement Code
   }

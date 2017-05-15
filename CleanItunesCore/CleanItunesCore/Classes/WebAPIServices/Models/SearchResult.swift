@@ -9,5 +9,10 @@
 import Foundation
 
 public struct SearchResult {
-  // TODO:
+  let wrapperType: String
+  let kind: String
+  let trackName: String
+  let artistName: String
+  let collectionName: String
+  let artworkUrl100: URL?
 }

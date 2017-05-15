@@ -11,8 +11,9 @@ import Alamofire
 
 public typealias APICompletion<T> = (APIResponseResult<T>) -> Void
 
-class WebAPIClient {
+public class WebAPIClient {
 
+  // MARK: - Generic Request
   func request<RequestType, ResponseType>(_ APIRequest: RequestType,
     responseHandler: ResponseType) -> Void
     where RequestType: Requestable, ResponseType: Responseable {
