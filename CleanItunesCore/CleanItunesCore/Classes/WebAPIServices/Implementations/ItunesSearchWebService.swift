@@ -23,6 +23,7 @@ public class ItunesSearchWebService: ItunesSearchableAPI {
   // MARK: - ItunesSearchableAPI Implementation
   public func searchContent(by term: String, searchMedia: SearchMedia, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {
     // TODO: Implement Code
+    
   }
 
   public func searchContent(by term: String, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {

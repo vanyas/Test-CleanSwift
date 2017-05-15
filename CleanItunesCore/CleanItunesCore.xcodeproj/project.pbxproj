@@ -16,6 +16,9 @@
 		161BB5C91ECA096500A59FA1 /* ItunesSearchWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5C81ECA096500A59FA1 /* ItunesSearchWebService.swift */; };
 		161BB5CC1ECA0DC400A59FA1 /* ItunesSearchRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5CB1ECA0DC400A59FA1 /* ItunesSearchRequestAdapter.swift */; };
 		161BB5CF1ECA0F0600A59FA1 /* WebAPIServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5CE1ECA0F0600A59FA1 /* WebAPIServicesFactory.swift */; };
+		161BB5D91ECA10BF00A59FA1 /* CleanItunesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603362D1EC3835700305F81 /* CleanItunesCore.framework */; };
+		161BB5E21ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E11ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift */; };
+		161BB5E51ECA129400A59FA1 /* MockWebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */; };
 		167A812A1EC62A5A00E1CEA6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81281EC62A5A00E1CEA6 /* Realm.framework */; };
 		167A812B1EC62A5A00E1CEA6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */; };
 		167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */; };
@@ -26,6 +29,16 @@
 		167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A813C1EC635AC00E1CEA6 /* Responseable.swift */; };
 		167A81411EC6389C00E1CEA6 /* WebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81401EC6389C00E1CEA6 /* WebAPIClient.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		161BB5DA1ECA10BF00A59FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160336241EC3835700305F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1603362C1EC3835700305F81;
+			remoteInfo = CleanItunesCore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1603362D1EC3835700305F81 /* CleanItunesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanItunesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +53,10 @@
 		161BB5C81ECA096500A59FA1 /* ItunesSearchWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchWebService.swift; sourceTree = "<group>"; };
 		161BB5CB1ECA0DC400A59FA1 /* ItunesSearchRequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequestAdapter.swift; sourceTree = "<group>"; };
 		161BB5CE1ECA0F0600A59FA1 /* WebAPIServicesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIServicesFactory.swift; sourceTree = "<group>"; };
+		161BB5D41ECA10BF00A59FA1 /* CleanItunesCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanItunesCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		161BB5D81ECA10BF00A59FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		161BB5E11ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchWebServiceTest.swift; sourceTree = "<group>"; };
+		161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWebAPIClient.swift; sourceTree = "<group>"; };
 		167A81281EC62A5A00E1CEA6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
@@ -62,6 +79,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		161BB5D11ECA10BF00A59FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				161BB5D91ECA10BF00A59FA1 /* CleanItunesCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1603362F1EC3835700305F81 /* CleanItunesCore */,
+				161BB5D51ECA10BF00A59FA1 /* CleanItunesCoreTests */,
 				1603362E1EC3835700305F81 /* Products */,
 				160336471EC386DB00305F81 /* Frameworks */,
 			);
@@ -78,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1603362D1EC3835700305F81 /* CleanItunesCore.framework */,
+				161BB5D41ECA10BF00A59FA1 /* CleanItunesCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +199,40 @@
 			path = ServiceFactory;
 			sourceTree = "<group>";
 		};
+		161BB5D51ECA10BF00A59FA1 /* CleanItunesCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5E31ECA124300A59FA1 /* Mocks */,
+				161BB5DF1ECA118600A59FA1 /* RequesAdaptersTests */,
+				161BB5E01ECA118600A59FA1 /* WebServicesTests */,
+				161BB5D81ECA10BF00A59FA1 /* Info.plist */,
+			);
+			path = CleanItunesCoreTests;
+			sourceTree = "<group>";
+		};
+		161BB5DF1ECA118600A59FA1 /* RequesAdaptersTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequesAdaptersTests;
+			sourceTree = "<group>";
+		};
+		161BB5E01ECA118600A59FA1 /* WebServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5E11ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift */,
+			);
+			path = WebServicesTests;
+			sourceTree = "<group>";
+		};
+		161BB5E31ECA124300A59FA1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		167A812C1EC62E1F00E1CEA6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,16 +323,41 @@
 			productReference = 1603362D1EC3835700305F81 /* CleanItunesCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		161BB5D31ECA10BF00A59FA1 /* CleanItunesCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 161BB5DC1ECA10BF00A59FA1 /* Build configuration list for PBXNativeTarget "CleanItunesCoreTests" */;
+			buildPhases = (
+				161BB5D01ECA10BF00A59FA1 /* Sources */,
+				161BB5D11ECA10BF00A59FA1 /* Frameworks */,
+				161BB5D21ECA10BF00A59FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				161BB5DB1ECA10BF00A59FA1 /* PBXTargetDependency */,
+			);
+			name = CleanItunesCoreTests;
+			productName = CleanItunesCoreTests;
+			productReference = 161BB5D41ECA10BF00A59FA1 /* CleanItunesCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		160336241EC3835700305F81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = WDPRO;
 				TargetAttributes = {
 					1603362C1EC3835700305F81 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BLKEL26JRB;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					161BB5D31ECA10BF00A59FA1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = BLKEL26JRB;
 						LastSwiftMigration = 0820;
@@ -292,12 +378,20 @@
 			projectRoot = "";
 			targets = (
 				1603362C1EC3835700305F81 /* CleanItunesCore */,
+				161BB5D31ECA10BF00A59FA1 /* CleanItunesCoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1603362B1EC3835700305F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		161BB5D21ECA10BF00A59FA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,7 +456,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		161BB5D01ECA10BF00A59FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				161BB5E51ECA129400A59FA1 /* MockWebAPIClient.swift in Sources */,
+				161BB5E21ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		161BB5DB1ECA10BF00A59FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1603362C1EC3835700305F81 /* CleanItunesCore */;
+			targetProxy = 161BB5DA1ECA10BF00A59FA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		160336331EC3835700305F81 /* Debug */ = {
@@ -513,6 +624,33 @@
 			};
 			name = Release;
 		};
+		161BB5DD1ECA10BF00A59FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = BLKEL26JRB;
+				INFOPLIST_FILE = CleanItunesCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		161BB5DE1ECA10BF00A59FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = BLKEL26JRB;
+				INFOPLIST_FILE = CleanItunesCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,6 +671,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		161BB5DC1ECA10BF00A59FA1 /* Build configuration list for PBXNativeTarget "CleanItunesCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				161BB5DD1ECA10BF00A59FA1 /* Debug */,
+				161BB5DE1ECA10BF00A59FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
