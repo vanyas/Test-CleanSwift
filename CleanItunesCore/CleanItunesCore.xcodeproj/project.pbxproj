@@ -8,21 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		160336321EC3835700305F81 /* CleanItunesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 160336301EC3835700305F81 /* CleanItunesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		160336451EC383FB00305F81 /* ItunesSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160336441EC383FB00305F81 /* ItunesSearchRequest.swift */; };
 		160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; };
+		161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5BC1ECA01B600A59FA1 /* Empty.swift */; };
 		167A812A1EC62A5A00E1CEA6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81281EC62A5A00E1CEA6 /* Realm.framework */; };
 		167A812B1EC62A5A00E1CEA6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */; };
+		167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */; };
+		167A81351EC62E8F00E1CEA6 /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81341EC62E8F00E1CEA6 /* APIResponseError.swift */; };
+		167A81371EC62EBF00E1CEA6 /* APIRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81361EC62EBF00E1CEA6 /* APIRequestMethod.swift */; };
+		167A81391EC62EFD00E1CEA6 /* APIResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81381EC62EFD00E1CEA6 /* APIResponseResult.swift */; };
+		167A813B1EC62F9B00E1CEA6 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A813A1EC62F9B00E1CEA6 /* Requestable.swift */; };
+		167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A813C1EC635AC00E1CEA6 /* Responseable.swift */; };
+		167A81411EC6389C00E1CEA6 /* WebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81401EC6389C00E1CEA6 /* WebAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1603362D1EC3835700305F81 /* CleanItunesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanItunesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		160336301EC3835700305F81 /* CleanItunesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanItunesCore.h; sourceTree = "<group>"; };
 		160336311EC3835700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		160336441EC383FB00305F81 /* ItunesSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequest.swift; sourceTree = "<group>"; };
 		160336481EC386DB00305F81 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		16042CCD1EC6171B00B17626 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
+		161BB5BC1ECA01B600A59FA1 /* Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		167A81281EC62A5A00E1CEA6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
+		167A81341EC62E8F00E1CEA6 /* APIResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseError.swift; sourceTree = "<group>"; };
+		167A81361EC62EBF00E1CEA6 /* APIRequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestMethod.swift; sourceTree = "<group>"; };
+		167A81381EC62EFD00E1CEA6 /* APIResponseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseResult.swift; sourceTree = "<group>"; };
+		167A813A1EC62F9B00E1CEA6 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		167A813C1EC635AC00E1CEA6 /* Responseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responseable.swift; sourceTree = "<group>"; };
+		167A81401EC6389C00E1CEA6 /* WebAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +73,8 @@
 		1603362F1EC3835700305F81 /* CleanItunesCore */ = {
 			isa = PBXGroup;
 			children = (
+				167A812C1EC62E1F00E1CEA6 /* Classes */,
 				16042CCC1EC6170400B17626 /* Carthage Files */,
-				160336421EC383EB00305F81 /* Classes */,
 				160336401EC383C400305F81 /* Supporting Files */,
 			);
 			path = CleanItunesCore;
@@ -73,22 +87,6 @@
 				160336311EC3835700305F81 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		160336421EC383EB00305F81 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				160336431EC383EB00305F81 /* Models */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		160336431EC383EB00305F81 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				160336441EC383FB00305F81 /* ItunesSearchRequest.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		160336471EC386DB00305F81 /* Frameworks */ = {
@@ -107,6 +105,61 @@
 				16042CCD1EC6171B00B17626 /* Cartfile.private */,
 			);
 			name = "Carthage Files";
+			sourceTree = "<group>";
+		};
+		167A812C1EC62E1F00E1CEA6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				167A812D1EC62E1F00E1CEA6 /* DataCore */,
+				167A812E1EC62E1F00E1CEA6 /* WebCore */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		167A812D1EC62E1F00E1CEA6 /* DataCore */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5BC1ECA01B600A59FA1 /* Empty.swift */,
+			);
+			path = DataCore;
+			sourceTree = "<group>";
+		};
+		167A812E1EC62E1F00E1CEA6 /* WebCore */ = {
+			isa = PBXGroup;
+			children = (
+				167A812F1EC62E1F00E1CEA6 /* Client */,
+				167A81301EC62E1F00E1CEA6 /* Models */,
+				167A81311EC62E1F00E1CEA6 /* Protocols */,
+			);
+			path = WebCore;
+			sourceTree = "<group>";
+		};
+		167A812F1EC62E1F00E1CEA6 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				167A81401EC6389C00E1CEA6 /* WebAPIClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		167A81301EC62E1F00E1CEA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */,
+				167A81341EC62E8F00E1CEA6 /* APIResponseError.swift */,
+				167A81361EC62EBF00E1CEA6 /* APIRequestMethod.swift */,
+				167A81381EC62EFD00E1CEA6 /* APIResponseResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		167A81311EC62E1F00E1CEA6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				167A813A1EC62F9B00E1CEA6 /* Requestable.swift */,
+				167A813C1EC635AC00E1CEA6 /* Responseable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160336451EC383FB00305F81 /* ItunesSearchRequest.swift in Sources */,
+				167A813B1EC62F9B00E1CEA6 /* Requestable.swift in Sources */,
+				167A81351EC62E8F00E1CEA6 /* APIResponseError.swift in Sources */,
+				167A81371EC62EBF00E1CEA6 /* APIRequestMethod.swift in Sources */,
+				167A81391EC62EFD00E1CEA6 /* APIResponseResult.swift in Sources */,
+				167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */,
+				161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */,
+				167A81411EC6389C00E1CEA6 /* WebAPIClient.swift in Sources */,
+				167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
