@@ -21,13 +21,20 @@ public class ItunesSearchWebService: ItunesSearchableAPI {
   }
 
   // MARK: - ItunesSearchableAPI Implementation
+  public func searchContent(by term: String, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {
+    let APIRequest = try requestAdapter.newSearchContent(
+      by: term,
+      searchMedia: nil
+    )
+
+    let responseHandler = ItunesSearchResponseHandler(
+      withCompletion: completion
+    )
+
+    webAPIClient.request(APIRequest, responseHandler: responseHandler)
+  }
+
   public func searchContent(by term: String, searchMedia: SearchMedia, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {
     // TODO: Implement Code
-    
   }
-
-  public func searchContent(by term: String, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {
-    // TODO: Implement Code
-  }
-
 }

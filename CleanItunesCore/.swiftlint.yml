@@ -69,6 +69,6 @@ function_parameter_count:
   warning: 3
   error: 6
 cyclomatic_complexity:
-  warning: 2
-  error: 6
+  warning: 10
+  error: 20
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle)

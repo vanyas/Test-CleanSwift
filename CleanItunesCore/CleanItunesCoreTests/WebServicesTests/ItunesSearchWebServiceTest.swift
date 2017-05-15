@@ -29,7 +29,7 @@ class ItunesSearchWebServiceTest: XCTestCase {
   }
 
   // MARK: - Tests
-  func testSearchContentBytTerm_withNoError_shouldSucceed() {
+  func testSearchContentBytTerm_withoutError_shouldStartProcessSuccessfulResult() {
     // Setup
     let expectAsync = expectation(description: "Search Content By term")
     let mockClient = mockWebAPIClient!
@@ -41,6 +41,26 @@ class ItunesSearchWebServiceTest: XCTestCase {
 
         //Verify
         XCTAssert(mockClient.processSuccesWasCalled, "Success should have been invoked")
+      }
+    } catch {
+      XCTFail("Error while invoking 'searchContent' \(error)")
+    }
+    waitForExpectations(timeout: maxWaitingTime, handler: nil)
+  }
+
+  func testSearchContentBytTerm_withError_shouldStartProcessFailureResult() {
+    // Setup
+    let expectAsync = expectation(description: "Search Content By term")
+    let mockClient = mockWebAPIClient!
+    mockWebAPIClient.errorValue = APIResponseError.businessLogic
+
+    // Test
+    do {
+      try webService.searchContent(by: "test term") { (response) in
+        expectAsync.fulfill()
+
+        //Verify
+        XCTAssert(mockClient.processFailureWasCalled, "Failure should have been invoked")
       }
     } catch {
       XCTFail("Error while invoking 'searchContent' \(error)")

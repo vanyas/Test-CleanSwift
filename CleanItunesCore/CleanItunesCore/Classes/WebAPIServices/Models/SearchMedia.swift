@@ -10,7 +10,7 @@ import Foundation
 
 public struct SearchMedia {
 
-  public enum EntityType {
+  public enum EntityType: String {
     case movieArtist
     case movie
     case musicArtist
@@ -27,7 +27,7 @@ public struct SearchMedia {
     case allTrack
   }
 
-  public enum MediaType {
+  public enum MediaType: String {
     case movie
     case music
     case tvShow

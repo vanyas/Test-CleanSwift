@@ -19,6 +19,8 @@
 		161BB5D91ECA10BF00A59FA1 /* CleanItunesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603362D1EC3835700305F81 /* CleanItunesCore.framework */; };
 		161BB5E21ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E11ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift */; };
 		161BB5E51ECA129400A59FA1 /* MockWebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */; };
+		161BB5E91ECA22F700A59FA1 /* ItunesSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E81ECA22F700A59FA1 /* ItunesSearchRequest.swift */; };
+		161BB5EB1ECA27F900A59FA1 /* ItunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5EA1ECA27F900A59FA1 /* ItunesSearchResponse.swift */; };
 		167A812A1EC62A5A00E1CEA6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81281EC62A5A00E1CEA6 /* Realm.framework */; };
 		167A812B1EC62A5A00E1CEA6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */; };
 		167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */; };
@@ -57,6 +59,8 @@
 		161BB5D81ECA10BF00A59FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161BB5E11ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchWebServiceTest.swift; sourceTree = "<group>"; };
 		161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWebAPIClient.swift; sourceTree = "<group>"; };
+		161BB5E81ECA22F700A59FA1 /* ItunesSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequest.swift; sourceTree = "<group>"; };
+		161BB5EA1ECA27F900A59FA1 /* ItunesSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchResponse.swift; sourceTree = "<group>"; };
 		167A81281EC62A5A00E1CEA6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
@@ -149,11 +153,13 @@
 		161BB5BE1ECA02B000A59FA1 /* WebAPIServices */ = {
 			isa = PBXGroup;
 			children = (
-				161BB5CD1ECA0EF300A59FA1 /* ServiceFactory */,
 				161BB5CA1ECA0DA000A59FA1 /* Adapters */,
+				161BB5BF1ECA034800A59FA1 /* Implementations */,
 				161BB5C31ECA044C00A59FA1 /* Models */,
 				161BB5C01ECA034800A59FA1 /* Protocols */,
-				161BB5BF1ECA034800A59FA1 /* Implementations */,
+				161BB5E61ECA22CA00A59FA1 /* Requestables */,
+				161BB5E71ECA22CA00A59FA1 /* Responseables */,
+				161BB5CD1ECA0EF300A59FA1 /* ServiceFactory */,
 			);
 			path = WebAPIServices;
 			sourceTree = "<group>";
@@ -231,6 +237,22 @@
 				161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		161BB5E61ECA22CA00A59FA1 /* Requestables */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5E81ECA22F700A59FA1 /* ItunesSearchRequest.swift */,
+			);
+			path = Requestables;
+			sourceTree = "<group>";
+		};
+		161BB5E71ECA22CA00A59FA1 /* Responseables */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5EA1ECA27F900A59FA1 /* ItunesSearchResponse.swift */,
+			);
+			path = Responseables;
 			sourceTree = "<group>";
 		};
 		167A812C1EC62E1F00E1CEA6 /* Classes */ = {
@@ -441,10 +463,12 @@
 			files = (
 				167A813B1EC62F9B00E1CEA6 /* Requestable.swift in Sources */,
 				167A81351EC62E8F00E1CEA6 /* APIResponseError.swift in Sources */,
+				161BB5EB1ECA27F900A59FA1 /* ItunesSearchResponse.swift in Sources */,
 				161BB5C51ECA045B00A59FA1 /* SearchResult.swift in Sources */,
 				167A81371EC62EBF00E1CEA6 /* APIRequestMethod.swift in Sources */,
 				161BB5CF1ECA0F0600A59FA1 /* WebAPIServicesFactory.swift in Sources */,
 				167A81391EC62EFD00E1CEA6 /* APIResponseResult.swift in Sources */,
+				161BB5E91ECA22F700A59FA1 /* ItunesSearchRequest.swift in Sources */,
 				167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */,
 				161BB5C21ECA036E00A59FA1 /* ItunesSearcheableAPI.swift in Sources */,
 				161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */,
