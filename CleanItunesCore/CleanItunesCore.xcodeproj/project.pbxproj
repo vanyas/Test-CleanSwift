@@ -10,6 +10,10 @@
 		160336321EC3835700305F81 /* CleanItunesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 160336301EC3835700305F81 /* CleanItunesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; };
 		161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5BC1ECA01B600A59FA1 /* Empty.swift */; };
+		161BB5C21ECA036E00A59FA1 /* ItunesSearcheableAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5C11ECA036E00A59FA1 /* ItunesSearcheableAPI.swift */; };
+		161BB5C51ECA045B00A59FA1 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5C41ECA045B00A59FA1 /* SearchResult.swift */; };
+		161BB5C71ECA04F500A59FA1 /* SearchMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5C61ECA04F400A59FA1 /* SearchMedia.swift */; };
+		161BB5C91ECA096500A59FA1 /* ItunesSearchWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5C81ECA096500A59FA1 /* ItunesSearchWebService.swift */; };
 		167A812A1EC62A5A00E1CEA6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81281EC62A5A00E1CEA6 /* Realm.framework */; };
 		167A812B1EC62A5A00E1CEA6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */; };
 		167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */; };
@@ -28,6 +32,10 @@
 		160336481EC386DB00305F81 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		16042CCD1EC6171B00B17626 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
 		161BB5BC1ECA01B600A59FA1 /* Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		161BB5C11ECA036E00A59FA1 /* ItunesSearcheableAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearcheableAPI.swift; sourceTree = "<group>"; };
+		161BB5C41ECA045B00A59FA1 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		161BB5C61ECA04F400A59FA1 /* SearchMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMedia.swift; sourceTree = "<group>"; };
+		161BB5C81ECA096500A59FA1 /* ItunesSearchWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchWebService.swift; sourceTree = "<group>"; };
 		167A81281EC62A5A00E1CEA6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
@@ -73,9 +81,9 @@
 		1603362F1EC3835700305F81 /* CleanItunesCore */ = {
 			isa = PBXGroup;
 			children = (
-				167A812C1EC62E1F00E1CEA6 /* Classes */,
 				16042CCC1EC6170400B17626 /* Carthage Files */,
 				160336401EC383C400305F81 /* Supporting Files */,
+				167A812C1EC62E1F00E1CEA6 /* Classes */,
 			);
 			path = CleanItunesCore;
 			sourceTree = "<group>";
@@ -107,11 +115,47 @@
 			name = "Carthage Files";
 			sourceTree = "<group>";
 		};
+		161BB5BE1ECA02B000A59FA1 /* WebAPIServices */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5C31ECA044C00A59FA1 /* Models */,
+				161BB5C01ECA034800A59FA1 /* Protocols */,
+				161BB5BF1ECA034800A59FA1 /* Implementations */,
+			);
+			path = WebAPIServices;
+			sourceTree = "<group>";
+		};
+		161BB5BF1ECA034800A59FA1 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5C81ECA096500A59FA1 /* ItunesSearchWebService.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		161BB5C01ECA034800A59FA1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5C11ECA036E00A59FA1 /* ItunesSearcheableAPI.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		161BB5C31ECA044C00A59FA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				161BB5C41ECA045B00A59FA1 /* SearchResult.swift */,
+				161BB5C61ECA04F400A59FA1 /* SearchMedia.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		167A812C1EC62E1F00E1CEA6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				167A812D1EC62E1F00E1CEA6 /* DataCore */,
 				167A812E1EC62E1F00E1CEA6 /* WebCore */,
+				161BB5BE1ECA02B000A59FA1 /* WebAPIServices */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -281,12 +325,16 @@
 			files = (
 				167A813B1EC62F9B00E1CEA6 /* Requestable.swift in Sources */,
 				167A81351EC62E8F00E1CEA6 /* APIResponseError.swift in Sources */,
+				161BB5C51ECA045B00A59FA1 /* SearchResult.swift in Sources */,
 				167A81371EC62EBF00E1CEA6 /* APIRequestMethod.swift in Sources */,
 				167A81391EC62EFD00E1CEA6 /* APIResponseResult.swift in Sources */,
 				167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */,
+				161BB5C21ECA036E00A59FA1 /* ItunesSearcheableAPI.swift in Sources */,
 				161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */,
+				161BB5C91ECA096500A59FA1 /* ItunesSearchWebService.swift in Sources */,
 				167A81411EC6389C00E1CEA6 /* WebAPIClient.swift in Sources */,
 				167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */,
+				161BB5C71ECA04F500A59FA1 /* SearchMedia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
