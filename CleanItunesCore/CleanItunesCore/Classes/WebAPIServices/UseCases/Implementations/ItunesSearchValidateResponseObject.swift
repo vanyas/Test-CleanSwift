@@ -24,5 +24,4 @@ class ItunesSearchTransformResponseObject: TransformResponseObject {
     }
     return results
   }
-
 }

@@ -27,7 +27,9 @@ class ItunesSearchResponseHandler: Responseable {
   func processSucceededRequest(withResponse response:Any?) -> Void {
     do {
       /* Check Response in correct JSON Format */
-      let results = try responseTransformer.transFormResponseObject(response)
+      var results = try responseTransformer.transFormResponseObject(response)
+      /* Filter Results */
+      results = filterOnlytracks(from: results)
       /* Deserialize Results */
       let searchResults = try Mapper<SearchResult>().mapArray(JSONArray: results)
       completionClosure(APIResponseResult.success(searchResults))
@@ -45,5 +47,15 @@ class ItunesSearchResponseHandler: Responseable {
   func processFailedRequest(withError failureError: Error?) -> Void {
     //TODO: Process Error
     completionClosure(APIResponseResult.failure(APIResponseError.native(failureError)))
+  }
+
+  // MARK: - Filtering Non-allowed Results
+  private func filterOnlytracks(from results: ItunesSearchTransformResponseObject.TransformType) -> ItunesSearchTransformResponseObject.TransformType {
+    return results.filter({ (element) -> Bool in
+      guard let wrapperType = element["wrapperType"] as? String else {
+        return false
+      }
+      return wrapperType == "track"
+    })
   }
 }
