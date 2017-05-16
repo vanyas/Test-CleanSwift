@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1602A1771ECB6495006A448C /* ValidateResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A1761ECB6495006A448C /* ValidateResponseObject.swift */; };
 		1602A1791ECB652A006A448C /* ItunesSearchValidateResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */; };
+		1602A17D1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A17C1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift */; };
 		160336321EC3835700305F81 /* CleanItunesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 160336301EC3835700305F81 /* CleanItunesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; };
 		161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5BC1ECA01B600A59FA1 /* Empty.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		1602A1761ECB6495006A448C /* ValidateResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateResponseObject.swift; sourceTree = "<group>"; };
 		1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchValidateResponseObject.swift; sourceTree = "<group>"; };
+		1602A17C1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequestAdapterTests.swift; sourceTree = "<group>"; };
 		1603362D1EC3835700305F81 /* CleanItunesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanItunesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		160336301EC3835700305F81 /* CleanItunesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanItunesCore.h; sourceTree = "<group>"; };
 		160336311EC3835700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,21 @@
 				1602A1761ECB6495006A448C /* ValidateResponseObject.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1602A17A1ECB8129006A448C /* RequestAdaptersTests */ = {
+			isa = PBXGroup;
+			children = (
+				1602A17C1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift */,
+			);
+			path = RequestAdaptersTests;
+			sourceTree = "<group>";
+		};
+		1602A17B1ECB8129006A448C /* ResponseHandlerTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseHandlerTests;
 			sourceTree = "<group>";
 		};
 		160336231EC3835700305F81 = {
@@ -244,20 +261,14 @@
 		161BB5D51ECA10BF00A59FA1 /* CleanItunesCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				1602A17A1ECB8129006A448C /* RequestAdaptersTests */,
+				1602A17B1ECB8129006A448C /* ResponseHandlerTests */,
 				16C789781ECA607A00062838 /* Static Data */,
 				161BB5E31ECA124300A59FA1 /* Mocks */,
-				161BB5DF1ECA118600A59FA1 /* RequesAdaptersTests */,
 				161BB5E01ECA118600A59FA1 /* WebServicesTests */,
 				161BB5D81ECA10BF00A59FA1 /* Info.plist */,
 			);
 			path = CleanItunesCoreTests;
-			sourceTree = "<group>";
-		};
-		161BB5DF1ECA118600A59FA1 /* RequesAdaptersTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RequesAdaptersTests;
 			sourceTree = "<group>";
 		};
 		161BB5E01ECA118600A59FA1 /* WebServicesTests */ = {
@@ -533,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1602A17D1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift in Sources */,
 				161BB5E51ECA129400A59FA1 /* MockWebAPIClient.swift in Sources */,
 				161BB5E21ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift in Sources */,
 			);
