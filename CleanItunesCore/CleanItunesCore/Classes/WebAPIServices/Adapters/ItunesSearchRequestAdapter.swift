@@ -22,15 +22,12 @@ class ItunesSearchRequestAdapter {
 
   // MARK: - Adapting Requests
   func newSearchContent(by term: String, searchMedia: SearchMedia?) throws  ->ItunesSearchRequest {
-    guard !term.isEmpty,
-          let encodedterm = term.addingPercentEncoding(
-            withAllowedCharacters: CharacterSet.urlQueryAllowed
-          ) else {
+    guard !term.isEmpty else {
       throw APIRequestError.missingParameters
     }
 
     var parameters = [String: Any]()
-    parameters["term"] = encodedterm
+    parameters["term"] = term
 
     if let mediaType = searchMedia?.media {
       parameters["media"] = mediaType.rawValue

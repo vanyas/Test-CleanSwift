@@ -68,4 +68,33 @@ class ItunesSearchWebServiceTest: XCTestCase {
     waitForExpectations(timeout: maxWaitingTime, handler: nil)
   }
 
+  func testSearchContentBytTerm_withJSONReturned_shouldReturnSearchResults() {
+    // Setup
+    let expectAsync = expectation(description: "Search Content By term")
+
+    let bundle = Bundle.init(for: type(of: self))
+    let path = bundle.url(forResource: "search_results", withExtension: "json")!
+    let data = try! Data(contentsOf: path)
+    let mockResults = try! JSONSerialization.jsonObject(with: data, options: [])
+    mockWebAPIClient.responseValue = mockResults
+    
+    // Test
+    do {
+      try webService.searchContent(by: "test term") { (response) in
+        expectAsync.fulfill()
+
+        //Verify
+        switch response {
+        case .failure(let error):
+          XCTFail("Error Returned \(error)")
+        case .success(let results):
+          XCTAssertEqual(2, results.count, "Results Count Does not match")
+          print(results)
+        }
+      }
+    } catch {
+      XCTFail("Error while invoking 'searchContent' \(error)")
+    }
+    waitForExpectations(timeout: maxWaitingTime, handler: nil)
+  }
 }

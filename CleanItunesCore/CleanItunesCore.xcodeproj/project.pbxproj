@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1602A1771ECB6495006A448C /* ValidateResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A1761ECB6495006A448C /* ValidateResponseObject.swift */; };
+		1602A1791ECB652A006A448C /* ItunesSearchValidateResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */; };
 		160336321EC3835700305F81 /* CleanItunesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 160336301EC3835700305F81 /* CleanItunesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; };
 		161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5BC1ECA01B600A59FA1 /* Empty.swift */; };
@@ -21,6 +23,7 @@
 		161BB5E51ECA129400A59FA1 /* MockWebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */; };
 		161BB5E91ECA22F700A59FA1 /* ItunesSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E81ECA22F700A59FA1 /* ItunesSearchRequest.swift */; };
 		161BB5EB1ECA27F900A59FA1 /* ItunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5EA1ECA27F900A59FA1 /* ItunesSearchResponse.swift */; };
+		161BB5ED1ECA4B0000A59FA1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161BB5EC1ECA4B0000A59FA1 /* ObjectMapper.framework */; };
 		167A812A1EC62A5A00E1CEA6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81281EC62A5A00E1CEA6 /* Realm.framework */; };
 		167A812B1EC62A5A00E1CEA6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */; };
 		167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */; };
@@ -30,6 +33,7 @@
 		167A813B1EC62F9B00E1CEA6 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A813A1EC62F9B00E1CEA6 /* Requestable.swift */; };
 		167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A813C1EC635AC00E1CEA6 /* Responseable.swift */; };
 		167A81411EC6389C00E1CEA6 /* WebAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81401EC6389C00E1CEA6 /* WebAPIClient.swift */; };
+		16C7897A1ECA609600062838 /* search_results.json in Resources */ = {isa = PBXBuildFile; fileRef = 16C789791ECA609600062838 /* search_results.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1602A1761ECB6495006A448C /* ValidateResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateResponseObject.swift; sourceTree = "<group>"; };
+		1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchValidateResponseObject.swift; sourceTree = "<group>"; };
 		1603362D1EC3835700305F81 /* CleanItunesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanItunesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		160336301EC3835700305F81 /* CleanItunesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanItunesCore.h; sourceTree = "<group>"; };
 		160336311EC3835700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 		161BB5E41ECA129400A59FA1 /* MockWebAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWebAPIClient.swift; sourceTree = "<group>"; };
 		161BB5E81ECA22F700A59FA1 /* ItunesSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequest.swift; sourceTree = "<group>"; };
 		161BB5EA1ECA27F900A59FA1 /* ItunesSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchResponse.swift; sourceTree = "<group>"; };
+		161BB5EC1ECA4B0000A59FA1 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		167A81281EC62A5A00E1CEA6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
@@ -70,6 +77,7 @@
 		167A813A1EC62F9B00E1CEA6 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		167A813C1EC635AC00E1CEA6 /* Responseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responseable.swift; sourceTree = "<group>"; };
 		167A81401EC6389C00E1CEA6 /* WebAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIClient.swift; sourceTree = "<group>"; };
+		16C789791ECA609600062838 /* search_results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_results.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161BB5ED1ECA4B0000A59FA1 /* ObjectMapper.framework in Frameworks */,
 				160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */,
 				167A812A1EC62A5A00E1CEA6 /* Realm.framework in Frameworks */,
 				167A812B1EC62A5A00E1CEA6 /* RealmSwift.framework in Frameworks */,
@@ -94,6 +103,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1602A1731ECB63F6006A448C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				1602A1751ECB6449006A448C /* Protocols */,
+				1602A1741ECB6449006A448C /* Implementations */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		1602A1741ECB6449006A448C /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		1602A1751ECB6449006A448C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1602A1761ECB6495006A448C /* ValidateResponseObject.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		160336231EC3835700305F81 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +169,7 @@
 		160336471EC386DB00305F81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				161BB5EC1ECA4B0000A59FA1 /* ObjectMapper.framework */,
 				167A81281EC62A5A00E1CEA6 /* Realm.framework */,
 				167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */,
 				160336481EC386DB00305F81 /* Alamofire.framework */,
@@ -153,6 +188,7 @@
 		161BB5BE1ECA02B000A59FA1 /* WebAPIServices */ = {
 			isa = PBXGroup;
 			children = (
+				1602A1731ECB63F6006A448C /* UseCases */,
 				161BB5CA1ECA0DA000A59FA1 /* Adapters */,
 				161BB5BF1ECA034800A59FA1 /* Implementations */,
 				161BB5C31ECA044C00A59FA1 /* Models */,
@@ -208,6 +244,7 @@
 		161BB5D51ECA10BF00A59FA1 /* CleanItunesCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				16C789781ECA607A00062838 /* Static Data */,
 				161BB5E31ECA124300A59FA1 /* Mocks */,
 				161BB5DF1ECA118600A59FA1 /* RequesAdaptersTests */,
 				161BB5E01ECA118600A59FA1 /* WebServicesTests */,
@@ -309,6 +346,14 @@
 				167A813C1EC635AC00E1CEA6 /* Responseable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		16C789781ECA607A00062838 /* Static Data */ = {
+			isa = PBXGroup;
+			children = (
+				16C789791ECA609600062838 /* search_results.json */,
+			);
+			path = "Static Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +462,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C7897A1ECA609600062838 /* search_results.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +478,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
@@ -464,9 +511,11 @@
 				167A813B1EC62F9B00E1CEA6 /* Requestable.swift in Sources */,
 				167A81351EC62E8F00E1CEA6 /* APIResponseError.swift in Sources */,
 				161BB5EB1ECA27F900A59FA1 /* ItunesSearchResponse.swift in Sources */,
+				1602A1771ECB6495006A448C /* ValidateResponseObject.swift in Sources */,
 				161BB5C51ECA045B00A59FA1 /* SearchResult.swift in Sources */,
 				167A81371EC62EBF00E1CEA6 /* APIRequestMethod.swift in Sources */,
 				161BB5CF1ECA0F0600A59FA1 /* WebAPIServicesFactory.swift in Sources */,
+				1602A1791ECB652A006A448C /* ItunesSearchValidateResponseObject.swift in Sources */,
 				167A81391EC62EFD00E1CEA6 /* APIResponseResult.swift in Sources */,
 				161BB5E91ECA22F700A59FA1 /* ItunesSearchRequest.swift in Sources */,
 				167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */,
@@ -703,6 +752,7 @@
 				161BB5DE1ECA10BF00A59FA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

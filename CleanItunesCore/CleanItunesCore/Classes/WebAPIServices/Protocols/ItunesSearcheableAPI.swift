@@ -11,9 +11,9 @@ import Foundation
 public protocol ItunesSearchableAPI {
 
   func searchContent(by term: String,
-                     completion: @escaping APICompletion<SearchResult>) throws -> Void
+                     completion: @escaping APICompletion<[SearchResult]>) throws -> Void
 
   func searchContent(by term: String,
                      searchMedia: SearchMedia,
-                     completion: @escaping APICompletion<SearchResult>) throws -> Void
+                     completion: @escaping APICompletion<[SearchResult]>) throws -> Void
 }

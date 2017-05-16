@@ -21,7 +21,7 @@ public class ItunesSearchWebService: ItunesSearchableAPI {
   }
 
   // MARK: - ItunesSearchableAPI Implementation
-  public func searchContent(by term: String, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {
+  public func searchContent(by term: String, completion: @escaping (APIResponseResult<[SearchResult]>) -> Void) throws {
     let APIRequest = try requestAdapter.newSearchContent(
       by: term,
       searchMedia: nil
@@ -34,7 +34,7 @@ public class ItunesSearchWebService: ItunesSearchableAPI {
     webAPIClient.request(APIRequest, responseHandler: responseHandler)
   }
 
-  public func searchContent(by term: String, searchMedia: SearchMedia, completion: @escaping (APIResponseResult<SearchResult>) -> Void) throws {
+  public func searchContent(by term: String, searchMedia: SearchMedia, completion: @escaping (APIResponseResult<[SearchResult]>) -> Void) throws {
     // TODO: Implement Code
   }
 }
