@@ -23,6 +23,13 @@
 			remoteGlobalIDString = 1603362D1EC3835700305F81;
 			remoteInfo = CleanItunesCore;
 		};
+		160B70591ECCB064004E0E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 161BB5D41ECA10BF00A59FA1;
+			remoteInfo = CleanItunesCoreTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				1603363D1EC3838100305F81 /* CleanItunesCore.framework */,
+				160B705A1ECCB064004E0E05 /* CleanItunesCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +161,13 @@
 			fileType = wrapper.framework;
 			path = CleanItunesCore.framework;
 			remoteRef = 1603363C1EC3838100305F81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		160B705A1ECCB064004E0E05 /* CleanItunesCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CleanItunesCoreTests.xctest;
+			remoteRef = 160B70591ECCB064004E0E05 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

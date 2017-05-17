@@ -10,6 +10,7 @@
 		1602A1771ECB6495006A448C /* ValidateResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A1761ECB6495006A448C /* ValidateResponseObject.swift */; };
 		1602A1791ECB652A006A448C /* ItunesSearchValidateResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */; };
 		1602A17D1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A17C1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift */; };
+		1602A17F1ECB9C00006A448C /* ItunesSearchResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1602A17E1ECB9C00006A448C /* ItunesSearchResponseHandlerTests.swift */; };
 		160336321EC3835700305F81 /* CleanItunesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 160336301EC3835700305F81 /* CleanItunesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		160336491EC386DB00305F81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; };
 		161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5BC1ECA01B600A59FA1 /* Empty.swift */; };
@@ -25,6 +26,11 @@
 		161BB5E91ECA22F700A59FA1 /* ItunesSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5E81ECA22F700A59FA1 /* ItunesSearchRequest.swift */; };
 		161BB5EB1ECA27F900A59FA1 /* ItunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161BB5EA1ECA27F900A59FA1 /* ItunesSearchResponse.swift */; };
 		161BB5ED1ECA4B0000A59FA1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161BB5EC1ECA4B0000A59FA1 /* ObjectMapper.framework */; };
+		165484291ECCCA44003CA430 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; };
+		165CEB2E1ECCCD83009A6CF4 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 160336481EC386DB00305F81 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1678862B1ECCBC2000903130 /* WebCoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678862A1ECCBC2000903130 /* WebCoreConstants.swift */; };
+		1678862D1ECCBF5100903130 /* ValidateResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678862C1ECCBF5100903130 /* ValidateResponseError.swift */; };
+		1678862F1ECCC08900903130 /* ItunesSearchValidateResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678862E1ECCC08900903130 /* ItunesSearchValidateResponseError.swift */; };
 		167A812A1EC62A5A00E1CEA6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81281EC62A5A00E1CEA6 /* Realm.framework */; };
 		167A812B1EC62A5A00E1CEA6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */; };
 		167A81331EC62E4F00E1CEA6 /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */; };
@@ -47,10 +53,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		165CEB2D1ECCCD49009A6CF4 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				165CEB2E1ECCCD83009A6CF4 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1602A1761ECB6495006A448C /* ValidateResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateResponseObject.swift; sourceTree = "<group>"; };
 		1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchValidateResponseObject.swift; sourceTree = "<group>"; };
 		1602A17C1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequestAdapterTests.swift; sourceTree = "<group>"; };
+		1602A17E1ECB9C00006A448C /* ItunesSearchResponseHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchResponseHandlerTests.swift; sourceTree = "<group>"; };
 		1603362D1EC3835700305F81 /* CleanItunesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanItunesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		160336301EC3835700305F81 /* CleanItunesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanItunesCore.h; sourceTree = "<group>"; };
 		160336311EC3835700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +91,9 @@
 		161BB5E81ECA22F700A59FA1 /* ItunesSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchRequest.swift; sourceTree = "<group>"; };
 		161BB5EA1ECA27F900A59FA1 /* ItunesSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchResponse.swift; sourceTree = "<group>"; };
 		161BB5EC1ECA4B0000A59FA1 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		1678862A1ECCBC2000903130 /* WebCoreConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebCoreConstants.swift; sourceTree = "<group>"; };
+		1678862C1ECCBF5100903130 /* ValidateResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateResponseError.swift; sourceTree = "<group>"; };
+		1678862E1ECCC08900903130 /* ItunesSearchValidateResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesSearchValidateResponseError.swift; sourceTree = "<group>"; };
 		167A81281EC62A5A00E1CEA6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		167A81291EC62A5A00E1CEA6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		167A81321EC62E4F00E1CEA6 /* APIRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
@@ -98,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165484291ECCCA44003CA430 /* Alamofire.framework in Frameworks */,
 				161BB5D91ECA10BF00A59FA1 /* CleanItunesCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				1602A1781ECB652A006A448C /* ItunesSearchValidateResponseObject.swift */,
+				1678862E1ECCC08900903130 /* ItunesSearchValidateResponseError.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -126,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				1602A1761ECB6495006A448C /* ValidateResponseObject.swift */,
+				1678862C1ECCBF5100903130 /* ValidateResponseError.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -141,6 +168,7 @@
 		1602A17B1ECB8129006A448C /* ResponseHandlerTests */ = {
 			isa = PBXGroup;
 			children = (
+				1602A17E1ECB9C00006A448C /* ItunesSearchResponseHandlerTests.swift */,
 			);
 			path = ResponseHandlerTests;
 			sourceTree = "<group>";
@@ -303,6 +331,14 @@
 			path = Responseables;
 			sourceTree = "<group>";
 		};
+		167886291ECCBC0A00903130 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1678862A1ECCBC2000903130 /* WebCoreConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		167A812C1EC62E1F00E1CEA6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +360,7 @@
 		167A812E1EC62E1F00E1CEA6 /* WebCore */ = {
 			isa = PBXGroup;
 			children = (
+				167886291ECCBC0A00903130 /* Constants */,
 				167A812F1EC62E1F00E1CEA6 /* Client */,
 				167A81301EC62E1F00E1CEA6 /* Models */,
 				167A81311EC62E1F00E1CEA6 /* Protocols */,
@@ -408,6 +445,7 @@
 				161BB5D01ECA10BF00A59FA1 /* Sources */,
 				161BB5D11ECA10BF00A59FA1 /* Frameworks */,
 				161BB5D21ECA10BF00A59FA1 /* Resources */,
+				165CEB2D1ECCCD49009A6CF4 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -519,6 +557,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1678862B1ECCBC2000903130 /* WebCoreConstants.swift in Sources */,
+				1678862D1ECCBF5100903130 /* ValidateResponseError.swift in Sources */,
 				167A813B1EC62F9B00E1CEA6 /* Requestable.swift in Sources */,
 				167A81351EC62E8F00E1CEA6 /* APIResponseError.swift in Sources */,
 				161BB5EB1ECA27F900A59FA1 /* ItunesSearchResponse.swift in Sources */,
@@ -532,6 +572,7 @@
 				167A813D1EC635AC00E1CEA6 /* Responseable.swift in Sources */,
 				161BB5C21ECA036E00A59FA1 /* ItunesSearcheableAPI.swift in Sources */,
 				161BB5BD1ECA01B600A59FA1 /* Empty.swift in Sources */,
+				1678862F1ECCC08900903130 /* ItunesSearchValidateResponseError.swift in Sources */,
 				161BB5CC1ECA0DC400A59FA1 /* ItunesSearchRequestAdapter.swift in Sources */,
 				161BB5C91ECA096500A59FA1 /* ItunesSearchWebService.swift in Sources */,
 				167A81411EC6389C00E1CEA6 /* WebAPIClient.swift in Sources */,
@@ -547,6 +588,7 @@
 				1602A17D1ECB8161006A448C /* ItunesSearchRequestAdapterTests.swift in Sources */,
 				161BB5E51ECA129400A59FA1 /* MockWebAPIClient.swift in Sources */,
 				161BB5E21ECA11CC00A59FA1 /* ItunesSearchWebServiceTest.swift in Sources */,
+				1602A17F1ECB9C00006A448C /* ItunesSearchResponseHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +756,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BLKEL26JRB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CleanItunesCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesCoreTests;
@@ -728,6 +774,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BLKEL26JRB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CleanItunesCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesCoreTests;

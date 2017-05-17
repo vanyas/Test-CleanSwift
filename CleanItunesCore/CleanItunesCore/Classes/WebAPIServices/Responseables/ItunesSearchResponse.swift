@@ -17,6 +17,7 @@ class ItunesSearchResponseHandler: Responseable {
 
   // MARK: - Use Cases
   private let responseTransformer = ItunesSearchTransformResponseObject()
+  private let responseErrorValidator = ItunesSearchValidateResponseError()
 
   // MARK: - Initializers
   init(withCompletion completionClosure: @escaping APICompletion<[SearchResult]>) {
@@ -36,6 +37,9 @@ class ItunesSearchResponseHandler: Responseable {
     } catch let APIError as APIResponseError {
       print(APIError)
       completionClosure(APIResponseResult.failure(APIError))
+    } catch let ObjectMapperError as MapError {
+      print(ObjectMapperError)
+      completionClosure(APIResponseResult.failure(APIResponseError.jsonMapping))
     } catch /* Unexpected Error */ {
       print(error)
       let badResponse = APIResponseError.badResponse(response)
@@ -45,8 +49,8 @@ class ItunesSearchResponseHandler: Responseable {
 
   // MARK: - Process Failure
   func processFailedRequest(withError failureError: Error?) -> Void {
-    //TODO: Process Error
-    completionClosure(APIResponseResult.failure(APIResponseError.native(failureError)))
+    let APIError = responseErrorValidator.processResponseError(failureError)
+    completionClosure(APIResponseResult.failure(APIError))
   }
 
   // MARK: - Filtering Non-allowed Results

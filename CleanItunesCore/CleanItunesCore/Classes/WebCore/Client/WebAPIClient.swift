@@ -11,7 +11,25 @@ import Alamofire
 
 public typealias APICompletion<T> = (APIResponseResult<T>) -> Void
 
-public class WebAPIClient {
+class WebAPIClient {
+
+  // MARK: - DefaultClient
+  static let defaultClient: WebAPIClient = {
+    var defaultHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+    defaultHeaders[WebCoreConstants.WebAPIClient.acceptHeaderKey] = WebCoreConstants.WebAPIClient.acceptHeaderValueJSON
+    let configuration = URLSessionConfiguration.default
+    configuration.httpAdditionalHeaders = defaultHeaders
+    let sessionManager = Alamofire.SessionManager(configuration: configuration)
+    return WebAPIClient(sessionManager: sessionManager)
+  }()
+
+  // MARK: - Private Properties
+  let sessionManager: Alamofire.SessionManager
+
+  // MARK: - Initializer
+  init(sessionManager: Alamofire.SessionManager = Alamofire.SessionManager.default) {
+    self.sessionManager = sessionManager
+  }
 
   // MARK: - Generic Request
   func request<RequestType, ResponseType>(_ APIRequest: RequestType,
@@ -22,11 +40,13 @@ public class WebAPIClient {
         url = url.appendingPathComponent(path)
       }
 
-      Alamofire.request(url,
+      sessionManager.request(url,
        method: alamofireHTTPMethod(from: APIRequest.method),
        parameters: APIRequest.parameters,
        headers: APIRequest.headers
-      ).responseJSON { (response) in
+      )
+      .validate()
+      .responseJSON { (response) in
         guard response.error == nil else {
           responseHandler.processFailedRequest(withError: response.error)
           return
