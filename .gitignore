@@ -34,3 +34,6 @@ xcuserdata/
 Carthage/Build
 Carthage/Checkouts
 
+#CoverageReports
+Reports/
+
