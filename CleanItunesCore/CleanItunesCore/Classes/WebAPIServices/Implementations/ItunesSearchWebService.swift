@@ -35,6 +35,15 @@ public class ItunesSearchWebService: ItunesSearchableAPI {
   }
 
   public func searchContent(by term: String, searchMedia: SearchMedia, completion: @escaping (APIResponseResult<[SearchResult]>) -> Void) throws {
-    // TODO: Implement Code
+    let APIRequest = try requestAdapter.newSearchContent(
+      by: term,
+      searchMedia: searchMedia
+    )
+
+    let responseHandler = ItunesSearchResponseHandler(
+      withCompletion: completion
+    )
+
+    webAPIClient.request(APIRequest, responseHandler: responseHandler)
   }
 }

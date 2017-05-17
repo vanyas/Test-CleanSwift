@@ -28,8 +28,8 @@ class ItunesSearchWebServiceTest: XCTestCase {
     )
   }
 
-  // MARK: - Tests
-  func testSearchContentBytTerm_withoutError_shouldStartProcessSuccessfulResult() {
+  // MARK: - SearchContentByTerm Tests
+  func testSearchContentByTerm_withoutError_shouldStartProcessSuccessfulResult() {
     // Setup
     let expectAsync = expectation(description: "Search Content By term")
     let mockClient = mockWebAPIClient!
@@ -48,7 +48,27 @@ class ItunesSearchWebServiceTest: XCTestCase {
     waitForExpectations(timeout: maxWaitingTime, handler: nil)
   }
 
-  func testSearchContentBytTerm_withError_shouldStartProcessFailureResult() {
+  func testSearchContentByTermAndSearchMedia_withoutError_shouldStartProcessSuccessfulResult() {
+    // Setup
+    let expectAsync = expectation(description: "Search Content By term")
+    let mockClient = mockWebAPIClient!
+    let searchMedia = SearchMedia.init(media: SearchMedia.MediaType.music,
+                                       entity: SearchMedia.EntityType.allArtist)
+
+    // Test
+    do {
+      try webService.searchContent(by: "test term", searchMedia: searchMedia) { (response) in
+        expectAsync.fulfill()
+        //Verify
+        XCTAssert(mockClient.processSuccesWasCalled, "Success should have been invoked")
+      }
+    } catch {
+      XCTFail("Error while invoking 'searchContent' \(error)")
+    }
+    waitForExpectations(timeout: maxWaitingTime, handler: nil)
+  }
+
+  func testSearchContentByTerm_withError_shouldStartProcessFailureResult() {
     // Setup
     let expectAsync = expectation(description: "Search Content By term")
     let mockClient = mockWebAPIClient!
@@ -68,7 +88,7 @@ class ItunesSearchWebServiceTest: XCTestCase {
     waitForExpectations(timeout: maxWaitingTime, handler: nil)
   }
 
-  func testSearchContentBytTerm_withJSONReturned_shouldReturnSearchResults() {
+  func testSearchContentByTerm_withJSONReturned_shouldReturnSearchResults() {
     // Setup
     let expectAsync = expectation(description: "Search Content By term")
 
