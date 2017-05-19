@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchItunesTableViewController: UITableViewController {
 
@@ -41,11 +42,39 @@ class SearchItunesTableViewController: UITableViewController {
       for: indexPath) as! DisplayItunesResultTableViewCell
 
     let result = searchResults[indexPath.row]
-    cell.resultImageView?.image = UIImage(named: SearchItunesSceneConstants.ImageCatalog.resultPlaceHolder.rawValue)
+    configureImageView(for: cell, withURL: result.imageURL)
     cell.resultTitleLabel.text = result.title
     cell.resultAuthorLabel.text = result.author
 
     return cell
+  }
+
+  fileprivate func configureImageView(for cell: DisplayItunesResultTableViewCell, withURL: URL?) {
+    let defaultImage = UIImage(named: SearchItunesSceneConstants.ImageCatalog.resultPlaceHolder.rawValue)
+    guard let url = withURL else {
+      cell.resultImageView.image = defaultImage
+      return
+    }
+
+    let processor = RoundCornerImageProcessor(cornerRadius: 16)
+    let options: KingfisherOptionsInfo = [
+      .processor(processor),
+      .transition(.fade(0.2))
+    ]
+
+    cell.resultImageView.kf.indicatorType = .activity
+    cell.resultImageView.kf.setImage(
+      with: url,
+      placeholder: defaultImage,
+      options: options,
+      progressBlock: nil,
+      completionHandler: { [weak cell] (image, downloadError, cacheType, url) in
+        guard downloadError == nil else {
+          cell?.resultImageView?.kf.indicatorType = .none
+          return
+        }
+      }
+    )
   }
 }
 

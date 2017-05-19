@@ -16,6 +16,7 @@
 		160175F11ECE3AD70028E38C /* SearchItunesResultsAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160175F01ECE3AD70028E38C /* SearchItunesResultsAPIWorker.swift */; };
 		160175F31ECE3B110028E38C /* DisplayItunesResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160175F21ECE3B110028E38C /* DisplayItunesResultTableViewCell.swift */; };
 		160175F51ECE3B360028E38C /* SearchItunesSceneConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160175F41ECE3B360028E38C /* SearchItunesSceneConstants.swift */; };
+		160175F91ECE43E60028E38C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160175F81ECE43E60028E38C /* Kingfisher.framework */; };
 		160335BD1EC37B7700305F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160335BC1EC37B7700305F81 /* AppDelegate.swift */; };
 		160335C21EC37B7700305F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160335C01EC37B7700305F81 /* Main.storyboard */; };
 		160335C41EC37B7700305F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160335C31EC37B7700305F81 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		160175F01ECE3AD70028E38C /* SearchItunesResultsAPIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesResultsAPIWorker.swift; sourceTree = "<group>"; };
 		160175F21ECE3B110028E38C /* DisplayItunesResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayItunesResultTableViewCell.swift; sourceTree = "<group>"; };
 		160175F41ECE3B360028E38C /* SearchItunesSceneConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesSceneConstants.swift; sourceTree = "<group>"; };
+		160175F81ECE43E60028E38C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		160335B91EC37B7700305F81 /* CleanItunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanItunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		160335BC1EC37B7700305F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		160335C11EC37B7700305F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1603363E1EC3838A00305F81 /* CleanItunesCore.framework in Frameworks */,
+				160175F91ECE43E60028E38C /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,12 +90,21 @@
 			path = Workers;
 			sourceTree = "<group>";
 		};
+		160175F71ECE43E60028E38C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				160175F81ECE43E60028E38C /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		160335B01EC37B7700305F81 = {
 			isa = PBXGroup;
 			children = (
 				160335BB1EC37B7700305F81 /* CleanItunesSearch */,
 				160335BA1EC37B7700305F81 /* Products */,
 				160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */,
+				160175F71ECE43E60028E38C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +188,7 @@
 				160335B51EC37B7700305F81 /* Sources */,
 				160335B61EC37B7700305F81 /* Frameworks */,
 				160335B71EC37B7700305F81 /* Resources */,
+				160175FA1ECE44040028E38C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +269,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		160175FA1ECE44040028E38C /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		160335B51EC37B7700305F81 /* Sources */ = {
@@ -393,6 +424,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BLKEL26JRB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CleanItunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesSearch;
@@ -406,6 +441,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BLKEL26JRB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CleanItunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesSearch;
