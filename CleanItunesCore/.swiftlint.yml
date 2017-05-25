@@ -29,6 +29,7 @@ disabled_rules: # rule identifiers to exclude from running
   - file_length
   #- leading_whitespace
   - implicit_getter
+  - redundant_void_return
 opt_in_rules: # some rules are only opt-in
   #- empty_count
   #- missing_docs

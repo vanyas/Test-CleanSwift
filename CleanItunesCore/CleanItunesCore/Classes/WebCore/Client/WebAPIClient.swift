@@ -33,7 +33,7 @@ class WebAPIClient {
 
   // MARK: - Generic Request
   func request<RequestType, ResponseType>(_ APIRequest: RequestType,
-    responseHandler: ResponseType) -> Void
+                                          responseHandler: ResponseType) -> Void
     where RequestType: Requestable, ResponseType: Responseable {
       var url = APIRequest.baseURL
       if let path = APIRequest.path {
