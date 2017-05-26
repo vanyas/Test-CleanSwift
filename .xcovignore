@@ -1,5 +1,7 @@
 #Factory Files
 - .*Factory.swift
+- AppDelegate.swift
+- .*TableViewCell.swift
 
 # Carthage
 - Carthage/Checkouts

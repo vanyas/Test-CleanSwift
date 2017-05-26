@@ -26,6 +26,9 @@
 		1656DDB51ED78104005F0442 /* CleanItunesCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1656DDBB1ED78205005F0442 /* SearchItunesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */; };
 		1656DDBD1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656DDBC1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift */; };
+		168EE09E1ED8A2F80091F1FC /* SearchItunesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE09D1ED8A2F80091F1FC /* SearchItunesUseCases.swift */; };
+		168EE0A01ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE09F1ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift */; };
+		168EE0A21ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE0A11ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		1656DDAD1ED78060005F0442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesPresenterTests.swift; sourceTree = "<group>"; };
 		1656DDBC1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSearchItunesPresenterViewBoundary.swift; sourceTree = "<group>"; };
+		168EE09D1ED8A2F80091F1FC /* SearchItunesUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesUseCases.swift; sourceTree = "<group>"; };
+		168EE09F1ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesResultCategoryMapper.swift; sourceTree = "<group>"; };
+		168EE0A11ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesResultCategoryMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 			children = (
 				1656DDB91ED781AC005F0442 /* Mocks */,
 				1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */,
+				168EE0A11ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift */,
 			);
 			path = SearchItunesSceneTests;
 			sourceTree = "<group>";
@@ -229,6 +236,7 @@
 		165CEB341ECCFB8A009A6CF4 /* SearchItunes */ = {
 			isa = PBXGroup;
 			children = (
+				168EE09B1ED8A2C20091F1FC /* Use Cases */,
 				160175EE1ECE3AD70028E38C /* TableViewCells */,
 				160175EF1ECE3AD70028E38C /* Workers */,
 				160175E71ECE0B6F0028E38C /* SearchItunesConfigurator.swift */,
@@ -240,6 +248,23 @@
 				160175F41ECE3B360028E38C /* SearchItunesSceneConstants.swift */,
 			);
 			path = SearchItunes;
+			sourceTree = "<group>";
+		};
+		168EE09B1ED8A2C20091F1FC /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				168EE09D1ED8A2F80091F1FC /* SearchItunesUseCases.swift */,
+				168EE09C1ED8A2C20091F1FC /* Implementations */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		168EE09C1ED8A2C20091F1FC /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				168EE09F1ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift */,
+			);
+			path = Implementations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,7 +419,9 @@
 				160175E21ECE0B360028E38C /* SearchItunesInteractor.swift in Sources */,
 				160175EA1ECE0B8A0028E38C /* SearchItunesProtocols.swift in Sources */,
 				160175F51ECE3B360028E38C /* SearchItunesSceneConstants.swift in Sources */,
+				168EE09E1ED8A2F80091F1FC /* SearchItunesUseCases.swift in Sources */,
 				160175F31ECE3B110028E38C /* DisplayItunesResultTableViewCell.swift in Sources */,
+				168EE0A01ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift in Sources */,
 				160175E81ECE0B6F0028E38C /* SearchItunesConfigurator.swift in Sources */,
 				160175E41ECE0B430028E38C /* SearchItunesPresenter.swift in Sources */,
 				160175E01ECE0B130028E38C /* SearchItunesTableViewController.swift in Sources */,
@@ -410,6 +437,7 @@
 			files = (
 				1656DDBB1ED78205005F0442 /* SearchItunesPresenterTests.swift in Sources */,
 				1656DDBD1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift in Sources */,
+				168EE0A21ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ class SearchItunesPresenter {
 
   // MARK: - Public Properties
   weak var output: SearchItunesPresenterViewBoundary!
+  var categoryMapper: SearchItunesResultCategoryMappable = SearchItunesResultCategoryMapper()
 
 }
 
@@ -40,17 +41,6 @@ extension SearchItunesPresenter: SearchItunesViewInteractorPresenterBoundary {
 
 
   fileprivate func setCategory(by kind: String) -> String {
-    switch kind {
-      case "feature-movie":
-        return "Movies"
-      case "song":
-        return "Music"
-      case "tv-episode":
-        return "TV&Series"
-      case "podcast":
-        return "Podcasts"
-      default:
-        return "Other"
-    }
+    return categoryMapper.mapCategory(from: kind)
   }
 }
