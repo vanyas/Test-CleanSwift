@@ -36,3 +36,19 @@ struct SearchItunesScene {
     }
   }
 }
+
+
+//  MARK: Equatable
+extension SearchItunesScene.SearchByTerm.ViewModel.DisplayedResult: Equatable {
+
+  typealias DisplayedResult = SearchItunesScene.SearchByTerm.ViewModel.DisplayedResult
+
+  static func ==(lhs: DisplayedResult, rhs: DisplayedResult) -> Bool {
+    return
+      lhs.author == rhs.author &&
+      lhs.category == rhs.category &&
+      lhs.title == rhs.title &&
+      lhs.imageURL == rhs.imageURL
+  }
+}
+

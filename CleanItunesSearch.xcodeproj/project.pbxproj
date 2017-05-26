@@ -22,6 +22,10 @@
 		160335C41EC37B7700305F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160335C31EC37B7700305F81 /* Assets.xcassets */; };
 		160335C71EC37B7700305F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160335C51EC37B7700305F81 /* LaunchScreen.storyboard */; };
 		1603363E1EC3838A00305F81 /* CleanItunesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; };
+		1656DDB31ED780E2005F0442 /* CleanItunesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; };
+		1656DDB51ED78104005F0442 /* CleanItunesCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1656DDBB1ED78205005F0442 /* SearchItunesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */; };
+		1656DDBD1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656DDBC1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,27 @@
 			remoteGlobalIDString = 161BB5D41ECA10BF00A59FA1;
 			remoteInfo = CleanItunesCoreTests;
 		};
+		1656DDAE1ED78060005F0442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 160335B11EC37B7700305F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 160335B81EC37B7700305F81;
+			remoteInfo = CleanItunesSearch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1656DDB41ED780F4005F0442 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1656DDB51ED78104005F0442 /* CleanItunesCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		160175DF1ECE0B130028E38C /* SearchItunesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesTableViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +83,10 @@
 		160335C61EC37B7700305F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		160335C81EC37B7700305F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CleanItunesCore.xcodeproj; path = CleanItunesCore/CleanItunesCore.xcodeproj; sourceTree = "<group>"; };
+		1656DDA91ED78060005F0442 /* CleanItunesSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanItunesSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1656DDAD1ED78060005F0442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesPresenterTests.swift; sourceTree = "<group>"; };
+		1656DDBC1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSearchItunesPresenterViewBoundary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +96,14 @@
 			files = (
 				1603363E1EC3838A00305F81 /* CleanItunesCore.framework in Frameworks */,
 				160175F91ECE43E60028E38C /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1656DDA61ED78060005F0442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1656DDB31ED780E2005F0442 /* CleanItunesCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				160335BB1EC37B7700305F81 /* CleanItunesSearch */,
+				1656DDAA1ED78060005F0442 /* CleanItunesSearchTests */,
 				160335BA1EC37B7700305F81 /* Products */,
 				160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */,
 				160175F71ECE43E60028E38C /* Frameworks */,
@@ -112,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				160335B91EC37B7700305F81 /* CleanItunesSearch.app */,
+				1656DDA91ED78060005F0442 /* CleanItunesSearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,8 +157,8 @@
 		160335BB1EC37B7700305F81 /* CleanItunesSearch */ = {
 			isa = PBXGroup;
 			children = (
-				165CEB331ECCFB6E009A6CF4 /* Scenes */,
 				165CEB321ECCFB2B009A6CF4 /* AppDelegate */,
+				165CEB331ECCFB6E009A6CF4 /* Scenes */,
 				165CEB2F1ECCFB11009A6CF4 /* StoryBoards */,
 				160335C31EC37B7700305F81 /* Assets.xcassets */,
 				160335C81EC37B7700305F81 /* Info.plist */,
@@ -135,6 +173,32 @@
 				160B705A1ECCB064004E0E05 /* CleanItunesCoreTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1656DDAA1ED78060005F0442 /* CleanItunesSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1656DDB81ED781AC005F0442 /* SearchItunesSceneTests */,
+				1656DDAD1ED78060005F0442 /* Info.plist */,
+			);
+			path = CleanItunesSearchTests;
+			sourceTree = "<group>";
+		};
+		1656DDB81ED781AC005F0442 /* SearchItunesSceneTests */ = {
+			isa = PBXGroup;
+			children = (
+				1656DDB91ED781AC005F0442 /* Mocks */,
+				1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */,
+			);
+			path = SearchItunesSceneTests;
+			sourceTree = "<group>";
+		};
+		1656DDB91ED781AC005F0442 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1656DDBC1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		165CEB2F1ECCFB11009A6CF4 /* StoryBoards */ = {
@@ -199,6 +263,25 @@
 			productReference = 160335B91EC37B7700305F81 /* CleanItunesSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1656DDA81ED78060005F0442 /* CleanItunesSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1656DDB01ED78060005F0442 /* Build configuration list for PBXNativeTarget "CleanItunesSearchTests" */;
+			buildPhases = (
+				1656DDA51ED78060005F0442 /* Sources */,
+				1656DDA61ED78060005F0442 /* Frameworks */,
+				1656DDA71ED78060005F0442 /* Resources */,
+				1656DDB41ED780F4005F0442 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1656DDAF1ED78060005F0442 /* PBXTargetDependency */,
+			);
+			name = CleanItunesSearchTests;
+			productName = CleanItunesSearchTests;
+			productReference = 1656DDA91ED78060005F0442 /* CleanItunesSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +296,13 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = BLKEL26JRB;
 						ProvisioningStyle = Automatic;
+					};
+					1656DDA81ED78060005F0442 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BLKEL26JRB;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 160335B81EC37B7700305F81;
 					};
 				};
 			};
@@ -236,6 +326,7 @@
 			projectRoot = "";
 			targets = (
 				160335B81EC37B7700305F81 /* CleanItunesSearch */,
+				1656DDA81ED78060005F0442 /* CleanItunesSearchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +356,13 @@
 				160335C71EC37B7700305F81 /* LaunchScreen.storyboard in Resources */,
 				160335C41EC37B7700305F81 /* Assets.xcassets in Resources */,
 				160335C21EC37B7700305F81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1656DDA71ED78060005F0442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +404,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1656DDA51ED78060005F0442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1656DDBB1ED78205005F0442 /* SearchItunesPresenterTests.swift in Sources */,
+				1656DDBD1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1656DDAF1ED78060005F0442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 160335B81EC37B7700305F81 /* CleanItunesSearch */;
+			targetProxy = 1656DDAE1ED78060005F0442 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		160335C01EC37B7700305F81 /* Main.storyboard */ = {
@@ -430,7 +545,7 @@
 				);
 				INFOPLIST_FILE = CleanItunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutoriales.CleanItunesSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -447,9 +562,40 @@
 				);
 				INFOPLIST_FILE = CleanItunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.disney.eServices.CleanItunesSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutoriales.CleanItunesSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1656DDB11ED78060005F0442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = BLKEL26JRB;
+				INFOPLIST_FILE = CleanItunesSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutoriales.CleanItunesSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanItunesSearch.app/CleanItunesSearch";
+			};
+			name = Debug;
+		};
+		1656DDB21ED78060005F0442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = BLKEL26JRB;
+				INFOPLIST_FILE = CleanItunesSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutoriales.CleanItunesSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanItunesSearch.app/CleanItunesSearch";
 			};
 			name = Release;
 		};
@@ -470,6 +616,15 @@
 			buildConfigurations = (
 				160335CC1EC37B7700305F81 /* Debug */,
 				160335CD1EC37B7700305F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1656DDB01ED78060005F0442 /* Build configuration list for PBXNativeTarget "CleanItunesSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1656DDB11ED78060005F0442 /* Debug */,
+				1656DDB21ED78060005F0442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

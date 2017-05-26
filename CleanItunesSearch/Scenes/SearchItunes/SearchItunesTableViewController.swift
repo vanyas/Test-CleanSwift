@@ -22,7 +22,7 @@ class SearchItunesTableViewController: UITableViewController {
     configureTableView()
 
     // Start Request
-    let request = SearchItunesScene.SearchByTerm.Request(term: "Alien")
+    let request = SearchItunesScene.SearchByTerm.Request(term: "Batman")
     output.searchItunes(request: request)
   }
 
