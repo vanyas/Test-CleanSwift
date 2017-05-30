@@ -39,7 +39,6 @@ extension SearchItunesPresenter: SearchItunesViewInteractorPresenterBoundary {
     output.displayFetchedResults(viewModel: viewModel)
   }
 
-
   fileprivate func setCategory(by kind: String) -> String {
     return categoryMapper.mapCategory(from: kind)
   }

@@ -68,7 +68,7 @@ class SearchItunesTableViewController: UITableViewController {
       placeholder: defaultImage,
       options: options,
       progressBlock: nil,
-      completionHandler: { [weak cell] (image, downloadError, cacheType, url) in
+      completionHandler: { [weak cell] (_, downloadError, _, _) in
         guard downloadError == nil else {
           cell?.resultImageView?.kf.indicatorType = .none
           return

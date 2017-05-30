@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SearchItunesResultCategoryMapper:  SearchItunesResultCategoryMappable {
+class SearchItunesResultCategoryMapper: SearchItunesResultCategoryMappable {
 
   fileprivate enum categoryType: String {
     case Movies
@@ -33,7 +33,7 @@ class SearchItunesResultCategoryMapper:  SearchItunesResultCategoryMappable {
     }
   }
 
-  fileprivate(set) lazy var supportedResultKinds:[String] = {
+  fileprivate(set) lazy var supportedResultKinds: [String] = {
     return [
       "feature-movie",
       "song",

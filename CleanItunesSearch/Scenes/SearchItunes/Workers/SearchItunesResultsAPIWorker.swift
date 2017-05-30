@@ -38,7 +38,7 @@ class SearchItunesResultsAPIWorker: SearchItunesResultsWorker {
             return completionHandler(searchResults)
         }
       }
-    } catch{
+    } catch {
       completionHandler([SearchResult]())
     }
   }
