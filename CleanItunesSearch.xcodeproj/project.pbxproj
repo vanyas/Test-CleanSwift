@@ -29,6 +29,8 @@
 		168EE09E1ED8A2F80091F1FC /* SearchItunesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE09D1ED8A2F80091F1FC /* SearchItunesUseCases.swift */; };
 		168EE0A01ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE09F1ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift */; };
 		168EE0A21ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE0A11ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift */; };
+		168EE0A41ED8D3590091F1FC /* SearchItunesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE0A31ED8D3590091F1FC /* SearchItunesInteractorTests.swift */; };
+		168EE0A61ED8D58F0091F1FC /* MockSearchItunesViewInteractorPresenterBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EE0A51ED8D58F0091F1FC /* MockSearchItunesViewInteractorPresenterBoundary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		168EE09D1ED8A2F80091F1FC /* SearchItunesUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesUseCases.swift; sourceTree = "<group>"; };
 		168EE09F1ED8A3F60091F1FC /* SearchItunesResultCategoryMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesResultCategoryMapper.swift; sourceTree = "<group>"; };
 		168EE0A11ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesResultCategoryMapperTests.swift; sourceTree = "<group>"; };
+		168EE0A31ED8D3590091F1FC /* SearchItunesInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItunesInteractorTests.swift; sourceTree = "<group>"; };
+		168EE0A51ED8D58F0091F1FC /* MockSearchItunesViewInteractorPresenterBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSearchItunesViewInteractorPresenterBoundary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 				1656DDB91ED781AC005F0442 /* Mocks */,
 				1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */,
 				168EE0A11ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift */,
+				168EE0A31ED8D3590091F1FC /* SearchItunesInteractorTests.swift */,
 			);
 			path = SearchItunesSceneTests;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				1656DDBC1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift */,
+				168EE0A51ED8D58F0091F1FC /* MockSearchItunesViewInteractorPresenterBoundary.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -435,9 +441,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168EE0A41ED8D3590091F1FC /* SearchItunesInteractorTests.swift in Sources */,
 				1656DDBB1ED78205005F0442 /* SearchItunesPresenterTests.swift in Sources */,
 				1656DDBD1ED783C7005F0442 /* MockSearchItunesPresenterViewBoundary.swift in Sources */,
 				168EE0A21ED8AD260091F1FC /* SearchItunesResultCategoryMapperTests.swift in Sources */,
+				168EE0A61ED8D58F0091F1FC /* MockSearchItunesViewInteractorPresenterBoundary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
