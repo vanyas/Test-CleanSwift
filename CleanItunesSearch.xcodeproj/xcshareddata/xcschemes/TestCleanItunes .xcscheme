@@ -61,20 +61,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1656DDA81ED78060005F0442"
-               BuildableName = "CleanItunesSearchTests.xctest"
-               BlueprintName = "CleanItunesSearchTests"
-               ReferencedContainer = "container:CleanItunesSearch.xcodeproj">
+               BlueprintIdentifier = "161BB5D31ECA10BF00A59FA1"
+               BuildableName = "CleanItunesCoreTests.xctest"
+               BlueprintName = "CleanItunesCoreTests"
+               ReferencedContainer = "container:CleanItunesCore/CleanItunesCore.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "161BB5D31ECA10BF00A59FA1"
-               BuildableName = "CleanItunesCoreTests.xctest"
-               BlueprintName = "CleanItunesCoreTests"
-               ReferencedContainer = "container:CleanItunesCore/CleanItunesCore.xcodeproj">
+               BlueprintIdentifier = "1656DDA81ED78060005F0442"
+               BuildableName = "CleanItunesSearchTests.xctest"
+               BlueprintName = "CleanItunesSearchTests"
+               ReferencedContainer = "container:CleanItunesSearch.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

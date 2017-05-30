@@ -15,9 +15,14 @@ class SearchItunesResultsAPIWorker: SearchItunesResultsWorker {
   let webService: ItunesSearchableAPI!
 
   // MARK: - Initializer
-  init() {
+  convenience init() {
     let baseURL = URL(string: "https://itunes.apple.com/search")!
-    webService = WebAPIServicesFactory.createItunesSearchWebService(for: baseURL)
+    let webService = WebAPIServicesFactory.createItunesSearchWebService(for: baseURL)
+    self.init(webService: webService)
+  }
+
+  init(webService: ItunesSearchableAPI) {
+    self.webService = webService
   }
 
   // MARK: - SearchItunesResultsWorker Implementation

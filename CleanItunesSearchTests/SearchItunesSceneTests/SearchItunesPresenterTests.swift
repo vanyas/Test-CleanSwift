@@ -26,7 +26,7 @@ class SearchItunesPresenterTests: XCTestCase {
 
   func testPresentFetchedResults_withValidResults_shouldCallDisplayFetchedResults() {
     // Setup
-    let searchResults = loadSearchResults()
+    let searchResults = MockData_LoadSearchResults()
     // Test
     presenter.presentFetchedResults(searchResults: searchResults)
 
@@ -36,7 +36,7 @@ class SearchItunesPresenterTests: XCTestCase {
 
   func testPresentFetchedResults_shouldMatchViewModel() {
     // Setup
-    let searchResult = loadSearchResults()[0]
+    let searchResult = MockData_LoadSearchResults()[0]
     let displayedResult = SearchItunesScene.SearchByTerm.ViewModel.DisplayedResult(
       category: "Other",
       title: searchResult.trackName,
@@ -54,28 +54,4 @@ class SearchItunesPresenterTests: XCTestCase {
     XCTAssertEqual(1, viewMock.viewModel!.displayedResults.count)
     XCTAssertEqual(displayedResults, viewMock.viewModel!.displayedResults)
   }
-}
-
-
-//  MARK: Mock Data
-extension SearchItunesPresenterTests {
-
-  fileprivate func loadSearchResults() -> [SearchResult] {
-    var searchResults = [SearchResult]()
-
-    for _ in 1...10 {
-      searchResults.append(
-        SearchResult(
-          wrapperType: "testType",
-          kind: "testKind",
-          trackName: "testTrack",
-          artistName: "testArtist",
-          artworkUrl100: nil
-        )
-      )
-    }
-
-    return searchResults
-  }
-
 }
