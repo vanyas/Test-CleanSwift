@@ -22,6 +22,7 @@
 		160335C41EC37B7700305F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160335C31EC37B7700305F81 /* Assets.xcassets */; };
 		160335C71EC37B7700305F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160335C51EC37B7700305F81 /* LaunchScreen.storyboard */; };
 		1603363E1EC3838A00305F81 /* CleanItunesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; };
+		164D53E21EDF19270039FC22 /* CleanItunesCore.framework in Copy Internal Frameworks */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1656DDB31ED780E2005F0442 /* CleanItunesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; };
 		1656DDB51ED78104005F0442 /* CleanItunesCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1603363D1EC3838100305F81 /* CleanItunesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1656DDBB1ED78205005F0442 /* SearchItunesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656DDBA1ED78205005F0442 /* SearchItunesPresenterTests.swift */; };
@@ -61,6 +62,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		164D53E11EDF18F60039FC22 /* Copy Internal Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				164D53E21EDF19270039FC22 /* CleanItunesCore.framework in Copy Internal Frameworks */,
+			);
+			name = "Copy Internal Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1656DDB41ED780F4005F0442 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +304,8 @@
 				160335B51EC37B7700305F81 /* Sources */,
 				160335B61EC37B7700305F81 /* Frameworks */,
 				160335B71EC37B7700305F81 /* Resources */,
-				160175FA1ECE44040028E38C /* Copy Frameworks */,
+				160175FA1ECE44040028E38C /* Copy Carthage Frameworks */,
+				164D53E11EDF18F60039FC22 /* Copy Internal Frameworks */,
 				165E2E541EDDEA3F0088C693 /* Run SwiftLint */,
 			);
 			buildRules = (
@@ -410,7 +423,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		160175FA1ECE44040028E38C /* Copy Frameworks */ = {
+		160175FA1ECE44040028E38C /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,7 +431,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
-			name = "Copy Frameworks";
+			name = "Copy Carthage Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
