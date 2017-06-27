@@ -11,7 +11,7 @@ import Foundation
 class SearchItunesInteractor {
 
   // MARK: - Public Properties
-  var output: SearchItunesViewInteractorPresenterBoundary!
+  var output: SearchItunesInteractorPresenterBoundary!
 
   // MARK: - Workers
   var searchResultsWorker: SearchItunesResultsWorker = SearchItunesResultsAPIWorker()

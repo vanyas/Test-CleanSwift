@@ -18,7 +18,7 @@ class SearchItunesPresenter {
 }
 
 // MARK: - SearchItunesViewInteractorPresenterBoundary Implementation
-extension SearchItunesPresenter: SearchItunesViewInteractorPresenterBoundary {
+extension SearchItunesPresenter: SearchItunesInteractorPresenterBoundary {
 
   func presentFetchedResults(searchResults: [SearchResult]) {
     //Format Results

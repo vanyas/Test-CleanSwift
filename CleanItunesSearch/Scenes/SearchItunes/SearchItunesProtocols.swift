@@ -16,7 +16,7 @@ protocol SearchItunesViewInteractorBoundary {
 }
 
 // MARK: - Interactor-Presenter Boundary
-protocol SearchItunesViewInteractorPresenterBoundary {
+protocol SearchItunesInteractorPresenterBoundary {
 
   func presentFetchedResults(searchResults: [SearchResult])
 

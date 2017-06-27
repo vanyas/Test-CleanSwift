@@ -10,7 +10,7 @@ import Foundation
 @testable import CleanItunesSearch
 @testable import CleanItunesCore
 
-class MockSearchItunesViewInteractorPresenterBoundary: SearchItunesViewInteractorPresenterBoundary {
+class MockSearchItunesViewInteractorPresenterBoundary: SearchItunesInteractorPresenterBoundary {
 
   //  MARK: Properties
   var wasPresentFetchedResultsCalled = false

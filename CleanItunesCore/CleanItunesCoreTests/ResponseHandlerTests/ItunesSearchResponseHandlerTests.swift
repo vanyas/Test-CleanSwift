@@ -64,7 +64,7 @@ class ItunesSearchResponseHandlerTests: XCTestCase {
     XCTAssertTrue(responseSpy.resultWasFailure, "Result should have been failed")
 
     guard case APIResponseError.jsonMapping = responseSpy.responseError! else {
-      XCTFail("Unexpected APIResponseError \(responseSpy.responseError)")
+      XCTFail("Unexpected APIResponseError \(String(describing: responseSpy.responseError))")
       return
     }
   }
@@ -85,7 +85,7 @@ class ItunesSearchResponseHandlerTests: XCTestCase {
     XCTAssertTrue(responseSpy.resultWasFailure, "Result should have failed")
 
     guard case APIResponseError.jsonMapping = responseSpy.responseError! else {
-      XCTFail("Unexpected APIResponseError \(responseSpy.responseError)")
+      XCTFail("Unexpected APIResponseError \(String(describing: responseSpy.responseError))")
       return
     }
   }
@@ -112,7 +112,7 @@ class ItunesSearchResponseHandlerTests: XCTestCase {
     //Verify
     XCTAssertTrue(responseSpy.resultWasFailure, "Result should have been failed")
     guard case APIResponseError.statusCode(_) = responseSpy.responseError! else {
-      XCTFail("Unexpected APIResponseError \(responseSpy.responseError)")
+      XCTFail("Unexpected APIResponseError \(String(describing: responseSpy.responseError))")
       return
     }
   }
@@ -131,7 +131,7 @@ class ItunesSearchResponseHandlerTests: XCTestCase {
     //Verify
     XCTAssertTrue(responseSpy.resultWasFailure, "Result should have been failed")
     guard case APIResponseError.jsonMapping = responseSpy.responseError! else {
-      XCTFail("Unexpected APIResponseError \(responseSpy.responseError)")
+      XCTFail("Unexpected APIResponseError \(String(describing: responseSpy.responseError))")
       return
     }
   }

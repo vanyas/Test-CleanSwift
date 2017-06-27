@@ -167,9 +167,9 @@
 			children = (
 				160335BB1EC37B7700305F81 /* CleanItunesSearch */,
 				1656DDAA1ED78060005F0442 /* CleanItunesSearchTests */,
+				160175F71ECE43E60028E38C /* Frameworks */,
 				160335BA1EC37B7700305F81 /* Products */,
 				160336381EC3838100305F81 /* CleanItunesCore.xcodeproj */,
-				160175F71ECE43E60028E38C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,7 +348,7 @@
 				TargetAttributes = {
 					160335B81EC37B7700305F81 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BLKEL26JRB;
+						DevelopmentTeam = VKCR9K5Q4L;
 						ProvisioningStyle = Automatic;
 					};
 					1656DDA81ED78060005F0442 = {
@@ -614,7 +614,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BLKEL26JRB;
+				DEVELOPMENT_TEAM = VKCR9K5Q4L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -631,7 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BLKEL26JRB;
+				DEVELOPMENT_TEAM = VKCR9K5Q4L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
